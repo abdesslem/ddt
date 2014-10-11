@@ -1,7 +1,7 @@
 import urllib
 import urllib2
 #import requests
- 
+#this is a test script to download file with different methode  
 #url = 'http://www.blog.pythonlibrary.org/wp-content/uploads/2012/06/wxDbViewer.zip'
 url = raw_input("Enter file url :")
 print "downloading with urllib"

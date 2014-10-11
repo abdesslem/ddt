@@ -51,7 +51,7 @@ class FileDownloader(object):
         self.startDownload(self.url, self.szDownloaded) #start the download with initial buffer
 
 #test our  code
-
-f = FileDownloader() 
-f.startDownload("https://github.com/aron-bordin/Tyrant-Sql/archive/master.zip")
-print("ok")
+if __name__ == '__main__':
+  f = FileDownloader() 
+  #f.startDownload("https://github.com/aron-bordin/Tyrant-Sql/archive/master.zip")
+  print("ok")
