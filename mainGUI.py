@@ -49,14 +49,9 @@ class Ui_Dialog(object):
         QtCore.QMetaObject.connectSlotsByName(Dialog)
 
     def retranslateUi(self, Dialog):
-        Dialog.setWindowTitle(QtGui.QApplication.translate("Dialog", "Dialog", None, QtGui.QApplication.UnicodeUTF8))
+        Dialog.setWindowTitle(QtGui.QApplication.translate("Dialog", "DDT", None, QtGui.QApplication.UnicodeUTF8))
         self.toolButton.setText(QtGui.QApplication.translate("Dialog", "démarrer", None, QtGui.QApplication.UnicodeUTF8))
         self.toolButton_2.setText(QtGui.QApplication.translate("Dialog", "pause", None, QtGui.QApplication.UnicodeUTF8))
         self.toolButton_3.setText(QtGui.QApplication.translate("Dialog", "stop", None, QtGui.QApplication.UnicodeUTF8))
         self.commandLinkButton.setText(QtGui.QApplication.translate("Dialog", "URL", None, QtGui.QApplication.UnicodeUTF8))
-app = QApplication(sys.argv)
-f = setupUi()
-f.show()
-app.setMainWidget(f)
-app.exec_loop()
 
