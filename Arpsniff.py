@@ -8,4 +8,5 @@ def arp_display(pkt):
 if not os.geteuid()==0:
    sys.exit("\n Only root can run this script\n")
 
+
 print sniff(prn=arp_display, filter="arp", store=0, count=10)

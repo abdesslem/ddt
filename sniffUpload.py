@@ -1,4 +1,3 @@
-# define API options
 url = "http://hosted.app/api/packets"
 token = "supersecretusertoken"
 # create parent function with passed in arguments
