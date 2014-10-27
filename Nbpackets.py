@@ -1,6 +1,6 @@
 #from scapy.all import *
 from scapy.all import sniff
-import os 
+import os, sys 
 packetCount = 0
 
 def customAction(packet):

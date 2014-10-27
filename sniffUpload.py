@@ -1,5 +1,7 @@
 url = "http://hosted.app/api/packets"
 token = "supersecretusertoken"
+import os, sys
+from scapy.all import sniff
 # create parent function with passed in arguments
 def customAction(url,token):
   # uploadPacket function has access to the url & token parameters because they are 'closed' in the nested function
