@@ -9,12 +9,11 @@ import os
 
 gmail_user = "test@gmail.com" # your email here
 gmail_pwd = "*******"         # your password
-From="amriabdesslem@gmail.com"
-fichier=""
+#From="amriabdesslem@gmail.com"
 def mail(to, subject, text, attach):
    msg = MIMEMultipart()
    #msg['From']= sys.argv[1]
-   msg['From'] = "amriabdesslem@gmail.com"
+   msg['From'] = "sender@gmail.com"
    msg['To'] = to
    msg['Subject'] = subject
 
@@ -38,7 +37,7 @@ def mail(to, subject, text, attach):
 
 #print "xd"
 body= From + "This is a email sent with python"
-mail("amriabdesslem@gmail.com",
+mail("sender@gmail.com",
   "Hello from python!",
    body,
    "missfont.log")
