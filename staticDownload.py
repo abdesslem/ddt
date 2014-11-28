@@ -19,7 +19,7 @@ if not os.geteuid()==0:
 #prn: function to apply to each packet. If something is returned,
 #             it is displayed. Ex:
 #           ex: prn = lambda x: x.summary()
-ip=getIp("www.facebook.com")
-#sniff(filter="ip",prn=customAction)
-build_filter = "src host " + ip
-sniff(filter=build_filter,prn=customAction)
+ip=str(getIp("www.facebook.com"))
+#sniff(filter=ip,prn=customAction)
+#build_filter = "src host " + ip
+#sniff(filter=build_filter,prn=customAction)
